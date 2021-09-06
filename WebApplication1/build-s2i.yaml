@@ -1,0 +1,116 @@
+﻿kind: Template
+apiVersion: v1
+metadata:
+  name: webappcore-s2i-template
+objects:
+
+- kind: ImageStream
+  apiVersion: v1
+  metadata:
+    annotations:
+    labels:
+      app: webappcore-s2i
+    name: webappcore-s2i
+  spec:
+    lookupPolicy:
+      local: false
+
+- kind: BuildConfig
+  apiVersion: v1
+  metadata:
+    name: webappcore-s2i
+    labels:
+      app: webappcore-s2i
+  spec:
+    runPolicy: Serial 
+    triggers: 
+      -
+        type: GitHub
+        github:
+          secret: secret101
+      -
+        type: ImageChange
+    source: 
+      git:
+        uri: "https://github.com/mchudinov/WebAppTestNetCore31.git"
+    strategy: 
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: "dotnet-31:latest"
+          namespace: openshift    
+    output: 
+      to:
+        kind: ImageStreamTag
+        name: "webappcore-s2i:latest"
+
+- kind: DeploymentConfig
+  apiVersion: v1
+  metadata:
+    name: webappcore-s2i
+    labels:
+      app: webappcore-s2i
+  spec:
+    template: 
+      metadata:
+        labels:
+          name: webappcore-s2i
+          app: webappcore-s2i
+      spec:
+        containers:
+          - name: webappcore-s2i
+            imagePullPolicy: Always
+            ports:
+              - containerPort: 8080
+                protocol: TCP            
+        restartPolicy: Always
+    replicas: 2 
+    triggers:
+      - type: ConfigChange 
+      - type: ImageChange 
+        imageChangeParams:
+          automatic: true
+          containerNames:
+            - webappcore-s2i
+          from:
+            kind: ImageStreamTag
+            name: "webappcore-s2i:latest"
+    strategy: 
+      type: Rolling
+    paused: false 
+    revisionHistoryLimit: 2 
+    minReadySeconds: 0 
+
+- kind: Service
+  apiVersion: v1
+  metadata:
+    annotations:
+    name: webappcore-s2i
+    labels:
+      app: webappcore-s2i
+  spec:
+    ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    selector:
+      app: webappcore-s2i
+    type: ClusterIP
+    sessionAffinity: None
+
+- kind: Route
+  apiVersion: route.openshift.io/v1
+  metadata:
+    name: webappcore-s2i
+    labels:
+      app: webappcore-s2i
+    annotations:
+  spec:
+    to:
+      kind: Service
+      name: webappcore-s2i
+      weight: 100
+    port:
+      targetPort: 8080-tcp
+  wildcardPolicy: None  

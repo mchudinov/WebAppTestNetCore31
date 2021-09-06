@@ -1,0 +1,1510 @@
+Name:			cli
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/cli
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:1620573f945cb7bf40d83a9bc8b907970f874ee575f065d6f8bb50a94b6aab0c
+
+  * quay.io/openshift/okd-content@sha256:1620573f945cb7bf40d83a9bc8b907970f874ee575f065d6f8bb50a94b6aab0c
+      3 days ago
+
+
+Name:			cli-artifacts
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/cli-artifacts
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:5db44d9034bcef70b36390f521a5aeab8ac17dac9e51698a4b48172592564c35
+
+  * quay.io/openshift/okd-content@sha256:5db44d9034bcef70b36390f521a5aeab8ac17dac9e51698a4b48172592564c35
+      3 days ago
+
+
+Name:			dotnet
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=.NET Core
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:37Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/dotnet
+Image Lookup:		local=false
+Unique Images:		4
+Tags:			7
+
+3.1
+  tagged from registry.centos.org/dotnet/dotnet-31-centos7:latest
+
+  Build and run .NET Core 3.1 applications on UBI. For more information about using this builder image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/3.1/build/README.md.
+  Tags: builder, .net, dotnet, dotnetcore, rh-dotnet31, hidden
+  Supports: dotnet:3.1, dotnet
+  Example Repo: https://github.com/redhat-developer/s2i-dotnetcore-ex.git
+
+  * registry.centos.org/dotnet/dotnet-31-centos7@sha256:619521f731f9fb1dc7c7b6a3d0a0ec367420ae1aa72b4f86bd45ce9e4be7e000
+      3 days ago
+
+3.1-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/dotnet-31:3.1
+    prefer registry pullthrough when referencing this tag
+
+  Build and run .NET Core 3.1 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/3.1/build/README.md.
+  Tags: builder, .net, dotnet, dotnetcore, dotnet31
+  Supports: dotnet:3.1, dotnet
+  Example Repo: https://github.com/redhat-developer/s2i-dotnetcore-ex.git
+
+  * registry.access.redhat.com/ubi8/dotnet-31@sha256:9a79bd875134d35e0f019f16a8fed5f411f8d1850c9a02b9a6801c348f6c67d5
+      3 days ago
+
+3.1-el7
+  tagged from registry.centos.org/dotnet/dotnet-31-centos7:latest
+
+  Build and run .NET Core 3.1 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/3.1/build/README.md.
+  Tags: builder, .net, dotnet, dotnetcore, rh-dotnet31
+  Supports: dotnet:3.1, dotnet
+  Example Repo: https://github.com/redhat-developer/s2i-dotnetcore-ex.git
+
+  * registry.centos.org/dotnet/dotnet-31-centos7@sha256:619521f731f9fb1dc7c7b6a3d0a0ec367420ae1aa72b4f86bd45ce9e4be7e000
+      3 days ago
+
+2.1
+  tagged from registry.centos.org/dotnet/dotnet-21-centos7:latest
+
+  Build and run .NET Core 2.1 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/2.1/build/README.md.
+  Tags: builder, .net, dotnet, dotnetcore, rh-dotnet21, hidden
+  Supports: dotnet:2.1, dotnet
+  Example Repo: https://github.com/redhat-developer/s2i-dotnetcore-ex.git
+
+  * registry.centos.org/dotnet/dotnet-21-centos7@sha256:4322da380426f6458e5c47243c1ff49be293dc58ed60c36eee25ccbbc6a09fdd
+      3 days ago
+
+2.1-ubi8
+  tagged from registry.access.redhat.com/ubi8/dotnet-21:2.1
+    prefer registry pullthrough when referencing this tag
+
+  Build and run .NET Core 2.1 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/2.1/build/README.md.
+  Tags: builder, .net, dotnet, dotnetcore, dotnet21
+  Supports: dotnet:2.1, dotnet
+  Example Repo: https://github.com/redhat-developer/s2i-dotnetcore-ex.git
+
+  * registry.access.redhat.com/ubi8/dotnet-21@sha256:f7718f5efd3436e781ee4322c92ab0c4ae63e61f5b36f1473a57874cc3522669
+      3 days ago
+
+2.1-el7
+  tagged from registry.centos.org/dotnet/dotnet-21-centos7:latest
+
+  Build and run .NET Core 2.1 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/2.1/build/README.md.
+  Tags: builder, .net, dotnet, dotnetcore, rh-dotnet21
+  Supports: dotnet:2.1, dotnet
+  Example Repo: https://github.com/redhat-developer/s2i-dotnetcore-ex.git
+
+  * registry.centos.org/dotnet/dotnet-21-centos7@sha256:4322da380426f6458e5c47243c1ff49be293dc58ed60c36eee25ccbbc6a09fdd
+      3 days ago
+
+
+Name:			dotnet-runtime
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=.NET Core Runtime
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:37Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/dotnet-runtime
+Image Lookup:		local=false
+Unique Images:		4
+Tags:			7
+
+3.1
+  tagged from registry.centos.org/dotnet/dotnet-31-runtime-centos7:latest
+
+  Run .NET Core applications on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/3.1/runtime/README.md.
+  Tags: runtime, .net-runtime, dotnet-runtime, dotnetcore-runtime, hidden
+  Supports: dotnet-runtime
+
+  * registry.centos.org/dotnet/dotnet-31-runtime-centos7@sha256:fd877bea6172c5ed5dbe451cbee4c4d818af8b708649ed1fca3fcbb7362a5c3a
+      3 days ago
+
+3.1-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/dotnet-31-runtime:3.1
+    prefer registry pullthrough when referencing this tag
+
+  Run .NET Core applications on UBI 8. For more information about using this image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/3.1/runtime/README.md.
+  Tags: runtime, .net-runtime, dotnet-runtime, dotnetcore-runtime
+  Supports: dotnet-runtime
+
+  * registry.access.redhat.com/ubi8/dotnet-31-runtime@sha256:1d366847e29abc45bd57c6718ff929cb224060c8e8bef1ebdcd8427c61d310bf
+      3 days ago
+
+3.1-el7
+  tagged from registry.centos.org/dotnet/dotnet-31-runtime-centos7:latest
+
+  Run .NET Core applications on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/3.1/runtime/README.md.
+  Tags: runtime, .net-runtime, dotnet-runtime, dotnetcore-runtime
+  Supports: dotnet-runtime
+
+  * registry.centos.org/dotnet/dotnet-31-runtime-centos7@sha256:fd877bea6172c5ed5dbe451cbee4c4d818af8b708649ed1fca3fcbb7362a5c3a
+      3 days ago
+
+2.1
+  tagged from registry.centos.org/dotnet/dotnet-21-runtime-centos7:latest
+
+  Run .NET Core applications on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/2.1/runtime/README.md.
+  Tags: runtime, .net-runtime, dotnet-runtime, dotnetcore-runtime, hidden
+  Supports: dotnet-runtime
+
+  * registry.centos.org/dotnet/dotnet-21-runtime-centos7@sha256:1df3b6a1c25ceb50a54c6e45e3030ec5edc0642cfc41c0fc602916a99e4857b1
+      3 days ago
+
+2.1-ubi8
+  tagged from registry.access.redhat.com/ubi8/dotnet-21-runtime:2.1
+    prefer registry pullthrough when referencing this tag
+
+  Run .NET Core applications on UBI 8. For more information about using this image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/2.1/runtime/README.md.
+  Tags: runtime, .net-runtime, dotnet-runtime, dotnetcore-runtime
+  Supports: dotnet-runtime
+
+  * registry.access.redhat.com/ubi8/dotnet-21-runtime@sha256:1bd08902cb75482a92a1fba830618ffac0037856223460df86984aaefa1bcad8
+      3 days ago
+
+2.1-el7
+  tagged from registry.centos.org/dotnet/dotnet-21-runtime-centos7:latest
+
+  Run .NET Core applications on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/redhat-developer/s2i-dotnetcore/tree/master/2.1/runtime/README.md.
+  Tags: runtime, .net-runtime, dotnet-runtime, dotnetcore-runtime
+  Supports: dotnet-runtime
+
+  * registry.centos.org/dotnet/dotnet-21-runtime-centos7@sha256:1df3b6a1c25ceb50a54c6e45e3030ec5edc0642cfc41c0fc602916a99e4857b1
+      3 days ago
+
+
+Name:			golang
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Go
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:34Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/golang
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			3
+
+1.13.4-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/go-toolset:1.13.4
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Go applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/golang-container/blob/master/README.md.
+  Tags: builder, golang, go
+  Supports: golang
+  Example Repo: https://github.com/sclorg/golang-ex.git
+
+  * registry.access.redhat.com/ubi8/go-toolset@sha256:ff3b2217e9a0bbb05536713606bdf49d0c9ef7754bd323482c41317a896c5bf2
+      3 days ago
+
+1.13.4-ubi7
+  tagged from registry.access.redhat.com/ubi7/go-toolset:1.13.4
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Go applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/golang-container/blob/master/README.md.
+  Tags: builder, golang, go
+  Supports: golang
+  Example Repo: https://github.com/sclorg/golang-ex.git
+
+  * registry.access.redhat.com/ubi7/go-toolset@sha256:64fced5004d1d0a7d2028abc0963b2afdfaf5de45fd5b3faa2965164539fbaff
+      3 days ago
+
+
+Name:			httpd
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Apache HTTP Server (httpd)
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:36Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/httpd
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			4
+
+2.4
+  tagged from docker.io/centos/httpd-24-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Apache HTTP Server (httpd) 2.4 on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/httpd-container/blob/master/2.4/README.md.
+  Tags: builder, httpd, hidden
+  Supports: httpd
+  Example Repo: https://github.com/sclorg/httpd-ex.git
+
+  * docker.io/centos/httpd-24-centos7@sha256:001ec5d1b463d8d62c87b11ef9ca64603e6dd2eb88edadcb4f70f1c593aa83af
+      3 days ago
+
+2.4-el8 (latest)
+  tagged from docker.io/centos/httpd-24-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Apache HTTP Server (httpd) 2.4 on CentOS 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/httpd-container/blob/master/2.4/README.md.
+  Tags: builder, httpd
+  Supports: httpd
+  Example Repo: https://github.com/sclorg/httpd-ex.git
+
+  * docker.io/centos/httpd-24-centos8@sha256:aba4d65d2949f6228e5f7fd34274b2fa5d16cdd62acf7b82ed00caaac25ca9ec
+      3 days ago
+
+2.4-el7
+  tagged from docker.io/centos/httpd-24-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Apache HTTP Server (httpd) 2.4 on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/httpd-container/blob/master/2.4/README.md.
+  Tags: builder, httpd
+  Supports: httpd
+  Example Repo: https://github.com/sclorg/httpd-ex.git
+
+  * docker.io/centos/httpd-24-centos7@sha256:001ec5d1b463d8d62c87b11ef9ca64603e6dd2eb88edadcb4f70f1c593aa83af
+      3 days ago
+
+
+Name:			installer
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/installer
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:b14aee041b51d02bd54dcaaa4d94de14b46368b21da3ee5e5da73610d9036297
+
+  * quay.io/openshift/okd-content@sha256:b14aee041b51d02bd54dcaaa4d94de14b46368b21da3ee5e5da73610d9036297
+      3 days ago
+
+
+Name:			installer-artifacts
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/installer-artifacts
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:0a8287d457a5a3e984ff39e54b00077fb5d8a9e2e4c19b5ecdb6f068eca913f6
+
+  * quay.io/openshift/okd-content@sha256:0a8287d457a5a3e984ff39e54b00077fb5d8a9e2e4c19b5ecdb6f068eca913f6
+      3 days ago
+
+
+Name:			java
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Red Hat OpenJDK
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:35Z
+			openshift.io/provider-display-name=Red Hat, Inc.
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/java
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			5
+
+11
+  tagged from registry.access.redhat.com/ubi8/openjdk-11:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Java applications using Maven and OpenJDK 11 upon UBI8.
+  Tags: builder, java, openjdk, hidden
+  Supports: java:11, java
+  Example Repo: https://github.com/jboss-openshift/openshift-quickstarts
+
+  * registry.access.redhat.com/ubi8/openjdk-11@sha256:76d357448c817d62aee4dcbbec20ac4c64211448158f0256b4d7b05a6646f706
+      3 days ago
+
+8
+  tagged from registry.access.redhat.com/ubi8/openjdk-8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Java applications using Maven and OpenJDK 1.8 upon UBI8.
+  Tags: builder, java, openjdk, hidden
+  Supports: java:8, java
+  Example Repo: https://github.com/jboss-openshift/openshift-quickstarts
+
+  * registry.access.redhat.com/ubi8/openjdk-8@sha256:65d92337fdda0adaa41adb5097e57b60ab8e3838e2ca4802fdc66cc5f283c198
+      3 days ago
+
+openjdk-11-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/openjdk-11:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Java applications using Maven and OpenJDK 11 upon UBI8.
+  Tags: builder, java, openjdk
+  Supports: java:11, java
+  Example Repo: https://github.com/jboss-openshift/openshift-quickstarts
+
+  * registry.access.redhat.com/ubi8/openjdk-11@sha256:76d357448c817d62aee4dcbbec20ac4c64211448158f0256b4d7b05a6646f706
+      3 days ago
+
+openjdk-8-ubi8
+  tagged from registry.access.redhat.com/ubi8/openjdk-8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Java applications using Maven and OpenJDK 1.8 upon UBI8.
+  Tags: builder, java, openjdk
+  Supports: java:8, java
+  Example Repo: https://github.com/jboss-openshift/openshift-quickstarts
+
+  * registry.access.redhat.com/ubi8/openjdk-8@sha256:65d92337fdda0adaa41adb5097e57b60ab8e3838e2ca4802fdc66cc5f283c198
+      3 days ago
+
+
+Name:			jenkins
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Jenkins
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:31Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/jenkins
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			2
+
+2 (latest)
+  tagged from quay.io/openshift/okd-content@sha256:0a1ce07b0c848e0e6fecbc49ccd4b402fc05d10a2837093820bdc321df60bb59
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Jenkins v2.x server on CentOS. For more information about using this container image, including OpenShift considerations, see https://github.com/openshift/jenkins/blob/master/README.md.
+  Tags: jenkins
+
+  * quay.io/openshift/okd-content@sha256:0a1ce07b0c848e0e6fecbc49ccd4b402fc05d10a2837093820bdc321df60bb59
+      3 days ago
+
+
+Name:			jenkins-agent-base
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:35Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/jenkins-agent-base
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  tagged from quay.io/openshift/okd-content@sha256:2f3c727370832f2f1bd09f5ef7289a1f17a2dee8d9f0da1882ba74d4dcc94a79
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Jenkins Base Agent to extend Jenkins agents
+  Tags: jenkins
+
+  * quay.io/openshift/okd-content@sha256:2f3c727370832f2f1bd09f5ef7289a1f17a2dee8d9f0da1882ba74d4dcc94a79
+      3 days ago
+
+
+Name:			jenkins-agent-maven
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Jenkins Maven Agent
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:32Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/jenkins-agent-maven
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			2
+
+v4.0 (latest)
+  tagged from quay.io/openshift/okd-content@sha256:1facb8e8f8867086a49ef6ac882755f02e748097b931578ace15538af2dd3eb3
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Jenkins Agent with Maven tooling
+  Tags: jenkins
+
+  * quay.io/openshift/okd-content@sha256:1facb8e8f8867086a49ef6ac882755f02e748097b931578ace15538af2dd3eb3
+      3 days ago
+
+
+Name:			jenkins-agent-nodejs
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Jenkins NodeJS Agent
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:37Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/jenkins-agent-nodejs
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			2
+
+v4.0 (latest)
+  tagged from quay.io/openshift/okd-content@sha256:5afc0ecfded61cc5afb10535a40d929fc1d7acbe49cdba2c6a349ad321e56511
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Jenkins Agent with NodeJS tooling
+  Tags: jenkins
+
+  * quay.io/openshift/okd-content@sha256:5afc0ecfded61cc5afb10535a40d929fc1d7acbe49cdba2c6a349ad321e56511
+      3 days ago
+
+
+Name:			mariadb
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=MariaDB
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:33Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/mariadb
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			4
+
+10.3
+  tagged from docker.io/centos/mariadb-103-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MariaDB 10.3 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mariadb-container/tree/master/10.3/README.md.
+  Tags: database, mariadb, hidden
+
+  * docker.io/centos/mariadb-103-centos7@sha256:cd3e49c82767630f1bdfcee09c73cd5027636c1355e57de02f64d2a19c0a3edf
+      3 days ago
+
+10.3-el8 (latest)
+  tagged from docker.io/centos/mariadb-103-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MariaDB 10.3 database on CentOS 8. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mariadb-container/tree/master/10.3/README.md.
+  Tags: database, mariadb
+
+  * docker.io/centos/mariadb-103-centos8@sha256:5741743d2bf053442d7a20ecf633f505d8912e11c70a8ae79c06bb6f01205acd
+      3 days ago
+
+10.3-el7
+  tagged from docker.io/centos/mariadb-103-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MariaDB 10.3 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mariadb-container/tree/master/10.3/README.md.
+  Tags: database, mariadb
+
+  * docker.io/centos/mariadb-103-centos7@sha256:cd3e49c82767630f1bdfcee09c73cd5027636c1355e57de02f64d2a19c0a3edf
+      3 days ago
+
+
+Name:			mongodb
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=MongoDB
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:33Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/mongodb
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			2
+
+3.6 (latest)
+  tagged from docker.io/centos/mongodb-36-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MongoDB 3.6 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mongodb-container/tree/master/3.6/README.md.
+  Tags: database, mongodb
+
+  * docker.io/centos/mongodb-36-centos7@sha256:ffdf2431bbc6d9a9d2a03e95bbbe8adb49ab9eac301f268a35038c84288259c1
+      3 days ago
+
+
+Name:			must-gather
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/must-gather
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:a9be98e5d01997775763fc3045527f1e030284841c04e76af14b110e5550c2bc
+
+  * quay.io/openshift/okd-content@sha256:a9be98e5d01997775763fc3045527f1e030284841c04e76af14b110e5550c2bc
+      3 days ago
+
+
+Name:			mysql
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=MySQL
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:31Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/mysql
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			4
+
+8.0
+  tagged from docker.io/centos/mysql-80-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MySQL 8.0 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mysql-container/blob/master/README.md.
+  Tags: mysql, hidden
+
+  * docker.io/centos/mysql-80-centos7@sha256:c1ff5d9af7bb39556a70a5983284956d86f4416c910d36962b71048f8c6a2b11
+      3 days ago
+
+8.0-el8 (latest)
+  tagged from docker.io/centos/mysql-80-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MySQL 8.0 database on CentOS 8. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mysql-container/blob/master/README.md.
+  Tags: mysql
+
+  * docker.io/centos/mysql-80-centos8@sha256:0c1b7d1621fac94dc35e3639e4c5207ad291c7029830d8c8eeb131c4bba4755d
+      3 days ago
+
+8.0-el7
+  tagged from docker.io/centos/mysql-80-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a MySQL 8.0 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/mysql-container/blob/master/README.md.
+  Tags: mysql
+
+  * docker.io/centos/mysql-80-centos7@sha256:c1ff5d9af7bb39556a70a5983284956d86f4416c910d36962b71048f8c6a2b11
+      3 days ago
+
+
+Name:			nginx
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Nginx HTTP server and a reverse proxy (nginx)
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:36Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/nginx
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			5
+
+1.16
+  tagged from docker.io/centos/nginx-116-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Nginx HTTP Server and a reverse proxy (nginx) on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/nginx-container/blob/master/1.16/README.md.
+  Tags: builder, nginx, hidden
+  Supports: nginx
+  Example Repo: https://github.com/sclorg/nginx-ex.git
+
+  * docker.io/centos/nginx-116-centos7@sha256:ead6fa1ed7af33bd6c26e4bd234da68fac531d919511053ea81e180118f5168a
+      3 days ago
+
+1.16-el8 (latest)
+  tagged from docker.io/centos/nginx-116-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Nginx HTTP Server and a reverse proxy (nginx) on CentOS 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/nginx-container/blob/master/1.16/README.md.
+  Tags: builder, nginx
+  Supports: nginx
+  Example Repo: https://github.com/sclorg/nginx-ex.git
+
+  * docker.io/centos/nginx-116-centos7@sha256:ead6fa1ed7af33bd6c26e4bd234da68fac531d919511053ea81e180118f5168a
+      3 days ago
+
+1.16-el7
+  tagged from docker.io/centos/nginx-116-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Nginx HTTP Server and a reverse proxy (nginx) on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/nginx-container/blob/master/1.16/README.md.
+  Tags: builder, nginx
+  Supports: nginx
+  Example Repo: https://github.com/sclorg/nginx-ex.git
+
+  * docker.io/centos/nginx-116-centos7@sha256:ead6fa1ed7af33bd6c26e4bd234da68fac531d919511053ea81e180118f5168a
+      3 days ago
+
+1.14-el8
+  tagged from docker.io/centos/nginx-114-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and serve static content via Nginx HTTP Server and a reverse proxy (nginx) on CentOS 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/nginx-container/blob/master/1.14/README.md.
+  Tags: builder, nginx
+  Supports: nginx
+  Example Repo: https://github.com/sclorg/nginx-ex.git
+
+  * docker.io/centos/nginx-114-centos8@sha256:3d839d97dd5e429e96a5abf1ef4cf924e76a9dbbbbc45672e41343b50f8516d6
+      3 days ago
+
+
+Name:			nodejs
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Node.js
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:41Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/nodejs
+Image Lookup:		local=false
+Unique Images:		6
+Tags:			7
+
+10
+  tagged from docker.io/centos/nodejs-10-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Node.js 10 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/10/README.md.
+  Tags: builder, nodejs, hidden
+  Example Repo: https://github.com/sclorg/nodejs-ex.git
+
+  * docker.io/centos/nodejs-10-centos7@sha256:55f2611539bc5c771a4848183bb3d29af95aa9ae66563e7e808b7501659f5c50
+      3 days ago
+
+10-ubi7
+  tagged from registry.access.redhat.com/ubi7/nodejs-10:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Node.js 10 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/10/README.md.
+  Tags: builder, nodejs
+  Example Repo: https://github.com/sclorg/nodejs-ex.git
+
+  * registry.access.redhat.com/ubi7/nodejs-10@sha256:61f29c4d5118c344a85813e1ca5a39a2224203e3919bb90b2dae980741b87312
+      3 days ago
+
+10-ubi8
+  tagged from registry.access.redhat.com/ubi8/nodejs-10:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Node.js 10 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/10/README.md.
+  Tags: builder, nodejs
+  Example Repo: https://github.com/sclorg/nodejs-ex.git
+
+  * registry.access.redhat.com/ubi8/nodejs-10@sha256:4b8d60103eebcbe838b9ddcc8425f9d1a08ce562cc65c96feebbb9160e6e8cfb
+      3 days ago
+
+12
+  tagged from docker.io/centos/nodejs-12-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Node.js 12 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/12/README.md.
+  Tags: builder, nodejs, hidden
+  Example Repo: https://github.com/sclorg/nodejs-ex.git
+
+  * docker.io/centos/nodejs-12-centos7@sha256:8aa17f1f4b866954802fa48ef2094f136a93817755c090385a2cfebe8569caa0
+      3 days ago
+
+12-ubi7
+  tagged from registry.access.redhat.com/ubi7/nodejs-12:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Node.js 12 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/12/README.md.
+  Tags: builder, nodejs
+  Example Repo: https://github.com/sclorg/nodejs-ex.git
+
+  * registry.access.redhat.com/ubi7/nodejs-12@sha256:593f8df68f12bc64f80567bb67c38a1dd06dd628722dc7aad2f29adefd9ae34e
+      3 days ago
+
+12-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/nodejs-12:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Node.js 12 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/12/README.md.
+  Tags: builder, nodejs
+  Example Repo: https://github.com/sclorg/nodejs-ex.git
+
+  * registry.access.redhat.com/ubi8/nodejs-12@sha256:cbee9886f23a0a5d2cb239b07e62a7c6c12a5b21181f467c3e6ce2ae3e69efbc
+      3 days ago
+
+
+Name:			oauth-proxy
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/oauth-proxy
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+v4.4
+  updates automatically from registry quay.io/openshift/okd-content@sha256:cb061902876f0eaa58438c2ce65f836c8357579d698d4e78f396a399192657bb
+
+  * quay.io/openshift/okd-content@sha256:cb061902876f0eaa58438c2ce65f836c8357579d698d4e78f396a399192657bb
+      3 days ago
+
+
+Name:			openliberty
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Open Liberty
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:34Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/openliberty
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  tagged from docker.io/openliberty/open-liberty-s2i:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Open Liberty applications on Red Hat Universal Base Image 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/OpenLiberty/open-liberty-s2i/blob/master/README.md.
+  Tags: builder, openliberty, java
+  Supports: jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openliberty/open-liberty-s2i@sha256:c4eb3edf656314fd76974ee429ff6ab86102817a2af595406266b02aef6af5b5
+      3 days ago
+
+
+Name:			perl
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Perl
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:32Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/perl
+Image Lookup:		local=false
+Unique Images:		3
+Tags:			6
+
+5.30
+  tagged from docker.io/centos/perl-530-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Perl 5.30 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-perl-container/blob/master/5.30/README.md.
+  Tags: builder, perl, hidden
+  Supports: perl:5.30, perl
+  Example Repo: https://github.com/sclorg/dancer-ex.git
+
+  * docker.io/centos/perl-530-centos7@sha256:7c36e04f02328b9810b72429fd17374f450454a0318d7557e5e901d991a0f691
+      3 days ago
+
+5.30-el7 (latest)
+  tagged from docker.io/centos/perl-530-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Perl 5.30 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-perl-container/blob/master/5.30/README.md.
+  Tags: builder, perl
+  Supports: perl:5.30, perl
+  Example Repo: https://github.com/sclorg/dancer-ex.git
+
+  * docker.io/centos/perl-530-centos7@sha256:7c36e04f02328b9810b72429fd17374f450454a0318d7557e5e901d991a0f691
+      3 days ago
+
+5.26
+  tagged from docker.io/centos/perl-526-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Perl 5.26 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-perl-container/blob/master/5.26/README.md.
+  Tags: builder, perl, hidden
+  Supports: perl:5.26, perl
+  Example Repo: https://github.com/sclorg/dancer-ex.git
+
+  * docker.io/centos/perl-526-centos7@sha256:2a5b3cf0437623e74a01213a2895cdf5fd2311423cea8685b349c6b7310330d9
+      3 days ago
+
+5.26-ubi8
+  tagged from registry.access.redhat.com/ubi8/perl-526:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Perl 5.26 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-perl-container/blob/master/5.26/README.md.
+  Tags: builder, perl
+  Supports: perl:5.26, perl
+  Example Repo: https://github.com/sclorg/dancer-ex.git
+
+  * registry.access.redhat.com/ubi8/perl-526@sha256:6b150259c6ef7b760046c49c6ee96d4080d7c07ff3718347b1c34987e7fae433
+      3 days ago
+
+5.26-el7
+  tagged from docker.io/centos/perl-526-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Perl 5.26 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-perl-container/blob/master/5.26/README.md.
+  Tags: builder, perl
+  Supports: perl:5.26, perl
+  Example Repo: https://github.com/sclorg/dancer-ex.git
+
+  * docker.io/centos/perl-526-centos7@sha256:2a5b3cf0437623e74a01213a2895cdf5fd2311423cea8685b349c6b7310330d9
+      3 days ago
+
+
+Name:			php
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=PHP
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:32Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/php
+Image Lookup:		local=false
+Unique Images:		4
+Tags:			5
+
+7.3
+  tagged from docker.io/centos/php-73-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run PHP 7.3 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-php-container/blob/master/7.3/README.md.
+  Tags: builder, php, hidden
+  Supports: php:7.3, php
+  Example Repo: https://github.com/sclorg/cakephp-ex.git
+
+  * docker.io/centos/php-73-centos7@sha256:2a75c9076648f1f7f7930d56ee1a9987a0b663424237b6ad8971af0328f7c198
+      3 days ago
+
+7.3-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/php-73:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run PHP 7.3 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-php-container/blob/master/7.3/README.md.
+  Tags: builder, php
+  Supports: php:7.3, php
+  Example Repo: https://github.com/sclorg/cakephp-ex.git
+
+  * registry.access.redhat.com/ubi8/php-73@sha256:ad556aae3e03247066ad4e10fd24eb9b109392957ab2fe7ad2de86d750497777
+      3 days ago
+
+7.3-ubi7
+  tagged from registry.access.redhat.com/ubi7/php-73:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run PHP 7.3 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-php-container/blob/master/7.3/README.md.
+  Tags: builder, php
+  Supports: php:7.3, php
+  Example Repo: https://github.com/sclorg/cakephp-ex.git
+
+  * registry.access.redhat.com/ubi7/php-73@sha256:43e4cb1f129d2a4cb256fd906046f0ffb0eb2da83ef33d95b370ba3b62d0a786
+      3 days ago
+
+7.2-ubi8
+  tagged from registry.access.redhat.com/ubi8/php-72:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run PHP 7.2 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-php-container/blob/master/7.2/README.md.
+  Tags: builder, php
+  Supports: php:7.2, php
+  Example Repo: https://github.com/sclorg/cakephp-ex.git
+
+  * registry.access.redhat.com/ubi8/php-72@sha256:daac7c37c508ca93c3d47a78d408025df0b997401251110f86123a73472bd8d0
+      3 days ago
+
+
+Name:			postgresql
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=PostgreSQL
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:32Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/postgresql
+Image Lookup:		local=false
+Unique Images:		5
+Tags:			8
+
+9.6-el8
+  tagged from docker.io/centos/postgresql-96-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 9.6 database on CentOS 8. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql
+
+  * docker.io/centos/postgresql-96-centos8@sha256:211e4ce22735a74760de34b6f252dfba1b61eae002f6374307fc23eb46f9204e
+      3 days ago
+
+10
+  tagged from docker.io/centos/postgresql-10-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 10 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql, hidden
+
+  * docker.io/centos/postgresql-10-centos7@sha256:f826fcb2983eef2c49e9e9a9d9d61ab403254b50cff85a7caa949fd8474fd558
+      3 days ago
+
+10-el7
+  tagged from docker.io/centos/postgresql-10-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 10 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql
+
+  * docker.io/centos/postgresql-10-centos7@sha256:f826fcb2983eef2c49e9e9a9d9d61ab403254b50cff85a7caa949fd8474fd558
+      3 days ago
+
+10-el8
+  tagged from docker.io/centos/postgresql-10-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 10 database on CentOS 8. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql
+
+  * docker.io/centos/postgresql-10-centos8@sha256:e02482801875da7b65575c622de1a63575b1b7dd3ff5ff50796432a5353215d0
+      3 days ago
+
+12
+  tagged from docker.io/centos/postgresql-12-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 12 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql, hidden
+
+  * docker.io/centos/postgresql-12-centos7@sha256:be8803d45d64870f8dfd018f3110af62e2e1558d64191faea461005e1bd03243
+      3 days ago
+
+12-el7
+  tagged from docker.io/centos/postgresql-12-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 12 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql
+
+  * docker.io/centos/postgresql-12-centos7@sha256:be8803d45d64870f8dfd018f3110af62e2e1558d64191faea461005e1bd03243
+      3 days ago
+
+12-el8 (latest)
+  tagged from docker.io/centos/postgresql-12-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a PostgreSQL 12 database on CentOS 8. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/postgresql-container/blob/master/README.md.
+  Tags: database, postgresql
+
+  * docker.io/centos/postgresql-12-centos8@sha256:8d5f83919430168697a9a6ee0f55beb90ccdcf26a5883d4bec42913f4eb74776
+      3 days ago
+
+
+Name:			python
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Python
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:34Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/python
+Image Lookup:		local=false
+Unique Images:		6
+Tags:			7
+
+3.8-ubi8 (latest)
+  tagged from registry.access.redhat.com/ubi8/python-38:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Python 3.8 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-python-container/blob/master/3.8/README.md.
+  Tags: builder, python
+  Supports: python:3.8, python
+  Example Repo: https://github.com/sclorg/django-ex.git
+
+  * registry.access.redhat.com/ubi8/python-38@sha256:af6f93b81f9313de95966e8cd681edb9dbcb5fdbddc5a4cc365af8e4534096ef
+      3 days ago
+
+3.8-ubi7
+  tagged from registry.access.redhat.com/ubi7/python-38:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Python 3.8 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-python-container/blob/master/3.8/README.md.
+  Tags: builder, python
+  Supports: python:3.8, python
+  Example Repo: https://github.com/sclorg/django-ex.git
+
+  * registry.access.redhat.com/ubi7/python-38@sha256:40852acd00c534f5088282ff26aadc1bdeffc218698f0382a723184356ae6892
+      3 days ago
+
+3.6-ubi8
+  tagged from registry.access.redhat.com/ubi8/python-36:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Python 3.6 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-python-container/blob/master/3.6/README.md.
+  Tags: builder, python
+  Supports: python:3.6, python
+  Example Repo: https://github.com/sclorg/django-ex.git
+
+  * registry.access.redhat.com/ubi8/python-36@sha256:ab12566dfc26ed4269a1272425a7e4cec9ce464b73f1f7b5c2d7318ee4be41e4
+      3 days ago
+
+2.7
+  tagged from docker.io/centos/python-27-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Python 2.7 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-python-container/blob/master/2.7/README.md.
+  Tags: builder, python, hidden
+  Supports: python:2.7, python
+  Example Repo: https://github.com/sclorg/django-ex.git
+
+  * docker.io/centos/python-27-centos7@sha256:3237fd6b8c3f009b74b6d57a15f540151dbd8e9714826a95d978ab9ca0915af2
+      3 days ago
+
+2.7-ubi8
+  tagged from registry.access.redhat.com/ubi8/python-27:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Python 2.7 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-python-container/blob/master/2.7/README.md.
+  Tags: builder, python
+  Supports: python:2.7, python
+  Example Repo: https://github.com/sclorg/django-ex.git
+
+  * registry.access.redhat.com/ubi8/python-27@sha256:e3e012e3de9b19bbee30aa81c71e18290c2b24630411671e4309f1e57f9145f0
+      3 days ago
+
+2.7-ubi7
+  tagged from registry.access.redhat.com/ubi7/python-27:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Python 2.7 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-python-container/blob/master/2.7/README.md.
+  Tags: builder, python
+  Supports: python:2.7, python
+  Example Repo: https://github.com/sclorg/django-ex.git
+
+  * registry.access.redhat.com/ubi7/python-27@sha256:4430988bd1f1b317492567a744ca0debe19e3d0e4fd01ca04f4e7ea971d1fe3c
+      3 days ago
+
+
+Name:			redis
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Redis
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:33Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/redis
+Image Lookup:		local=false
+Unique Images:		2
+Tags:			4
+
+5
+  tagged from docker.io/centos/redis-5-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Redis 5 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/redis-container/tree/master/5/README.md.
+  Tags: redis, hidden
+
+  * docker.io/centos/redis-5-centos7@sha256:7ed5b4b32cab66e9de23da91ff9c6c961d4d5e25a482027e311f063891f766da
+      3 days ago
+
+5-el7
+  tagged from docker.io/centos/redis-5-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Redis 5 database on CentOS 7. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/redis-container/tree/master/5/README.md.
+  Tags: redis
+
+  * docker.io/centos/redis-5-centos7@sha256:7ed5b4b32cab66e9de23da91ff9c6c961d4d5e25a482027e311f063891f766da
+      3 days ago
+
+5-el8 (latest)
+  tagged from docker.io/centos/redis-5-centos8:latest
+    prefer registry pullthrough when referencing this tag
+
+  Provides a Redis 5 database on CentOS 8. For more information about using this database image, including OpenShift considerations, see https://github.com/sclorg/redis-container/tree/master/5/README.md.
+  Tags: redis
+
+  * docker.io/centos/redis-5-centos8@sha256:5ea57e4833e80e77686b9a1485c2a0945442d05a74303ad1118aa5a3afd91ee3
+      3 days ago
+
+
+Name:			ruby
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=Ruby
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:42Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/ruby
+Image Lookup:		local=false
+Unique Images:		7
+Tags:			8
+
+2.7-ubi7 (latest)
+  tagged from registry.access.redhat.com/ubi7/ruby-27:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.7 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.7/README.md.
+  Tags: builder, ruby
+  Supports: ruby:2.7, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * registry.access.redhat.com/ubi7/ruby-27@sha256:cb215703ecf77b50e375493cec10cf10dc730aec5cf699962811765fcc610927
+      3 days ago
+
+2.6
+  tagged from docker.io/centos/ruby-26-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.6 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.6/README.md.
+  Tags: builder, ruby, hidden
+  Supports: ruby:2.6, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * docker.io/centos/ruby-26-centos7@sha256:a965d21ff975e4bbec87b1769d0730a91fc1d91c22161caae119f81e66937178
+      3 days ago
+
+2.6-ubi8
+  tagged from registry.access.redhat.com/ubi8/ruby-26:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.6 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.6/README.md.
+  Tags: builder, ruby
+  Supports: ruby:2.6, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * registry.access.redhat.com/ubi8/ruby-26@sha256:5e828cb537399a3d7c4950ced8fbf2e084d89ab7c6fcff995598b44e8d394450
+      3 days ago
+
+2.6-ubi7
+  tagged from registry.access.redhat.com/ubi7/ruby-26:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.6 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.6/README.md.
+  Tags: builder, ruby
+  Supports: ruby:2.6, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * registry.access.redhat.com/ubi7/ruby-26@sha256:84c038dde6c005f2a54391d1ca2735ba1e01f2d3ea8662f7a1b5932b7e920870
+      3 days ago
+
+2.5
+  tagged from docker.io/centos/ruby-25-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.5 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.5/README.md.
+  Tags: builder, ruby, hidden
+  Supports: ruby:2.5, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * docker.io/centos/ruby-25-centos7@sha256:7f0579dfbd4b70a68413a1c71f9b03307f61a4a5b23244b4d77998e88a82adec
+      3 days ago
+
+2.5-ubi8
+  tagged from registry.access.redhat.com/ubi8/ruby-25:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.5 applications on UBI 8. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.5/README.md.
+  Tags: builder, ruby
+  Supports: ruby:2.5, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * registry.access.redhat.com/ubi8/ruby-25@sha256:8142bb7726ae1636da87fa6f1a97ced4a356b2df1941d1c154143a33c9c9831f
+      3 days ago
+
+2.5-ubi7
+  tagged from registry.access.redhat.com/ubi7/ruby-25:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run Ruby 2.5 applications on UBI 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-ruby-container/blob/master/2.5/README.md.
+  Tags: builder, ruby
+  Supports: ruby:2.5, ruby
+  Example Repo: https://github.com/sclorg/ruby-ex.git
+
+  * registry.access.redhat.com/ubi7/ruby-25@sha256:76cf0ed6324b840770d112b4c16956ebd77510ea1826496a6858dc59851369fa
+      3 days ago
+
+
+Name:			tests
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/tests
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:cf0c2885c5489e7a5fac71b6b3b557680b765ddc69bcf91b3b7d99cc518998ff
+
+  * quay.io/openshift/okd-content@sha256:cf0c2885c5489e7a5fac71b6b3b557680b765ddc69bcf91b3b7d99cc518998ff
+      3 days ago
+
+
+Name:			tools
+Namespace:		openshift
+Created:		3 days ago
+Labels:			<none>
+Annotations:		<none>
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/tools
+Image Lookup:		local=false
+Unique Images:		1
+Tags:			1
+
+latest
+  updates automatically from registry quay.io/openshift/okd-content@sha256:6009d42d3a7122eefc17d3aa2316664316597b5978b62c807fac9a44a4a3f679
+
+  * quay.io/openshift/okd-content@sha256:6009d42d3a7122eefc17d3aa2316664316597b5978b62c807fac9a44a4a3f679
+      3 days ago
+
+
+Name:			wildfly
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=WildFly
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:43Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/wildfly
+Image Lookup:		local=false
+Unique Images:		15
+Tags:			15
+
+latest
+  tagged from quay.io/wildfly/wildfly-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+
+WARNING: By selecting this tag, your application will automatically update to use the latest version of WildFly available on OpenShift, including major versions updates.
+  Tags: builder, wildfly, java
+  Supports: jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * quay.io/wildfly/wildfly-centos7@sha256:20047fe2ee04d887d163449e6c130f16c62876a18d4efbe8450b40460c1c5baf
+      3 days ago
+
+20.0
+  tagged from quay.io/wildfly/wildfly-centos7:20.0
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 20 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:20, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * quay.io/wildfly/wildfly-centos7@sha256:a2812e358a6495ef37ead2e015b4f680c6d022a99375e095a73de319cd5ad53c
+      3 days ago
+
+19.0
+  tagged from quay.io/wildfly/wildfly-centos7:19.0
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 19 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:19, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * quay.io/wildfly/wildfly-centos7@sha256:c9e3dd86ede3fa93a3e1d07452be8921d6f5e1f248c6b3fcc1f9546cf177c548
+      3 days ago
+
+18.0
+  tagged from quay.io/wildfly/wildfly-centos7:18.0
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 18 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:18, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * quay.io/wildfly/wildfly-centos7@sha256:4c880e767b9ad36a6f2487f2d8c7db54117e78cb9e3d6fa4d451fe716374d0bd
+      3 days ago
+
+17.0
+  tagged from quay.io/wildfly/wildfly-centos7:17.0
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 17 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:17, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * quay.io/wildfly/wildfly-centos7@sha256:5a20dd8d9bfe99d9c192c2385fa55daa929ee488068de4ad0b95d397d3cc46a5
+      3 days ago
+
+16.0
+  tagged from docker.io/openshift/wildfly-160-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 16 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:16, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-160-centos7@sha256:d12c6ef86991edf35e51aef804822f76897cbc579f7518ce84eaf55ec8ec6f9d
+      3 days ago
+
+15.0
+  tagged from docker.io/openshift/wildfly-150-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 15 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:15, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-150-centos7@sha256:66ce43dd4be6aabcb97557f1cf86abb95f5b2a78cf4a40752d5f4caa8c9c25e2
+      3 days ago
+
+14.0
+  tagged from docker.io/openshift/wildfly-140-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 14 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:14, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-140-centos7@sha256:4e2dc4d7b87b1d26ca7b302ed10da6875602a2a618a28814ccd8e96ccfab6f4d
+      3 days ago
+
+13.0
+  tagged from docker.io/openshift/wildfly-130-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 13 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:13, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-130-centos7@sha256:73b9d5578eac447606e708a635bc0661755866162673a4c6e6d1119248d3c2c8
+      3 days ago
+
+12.0
+  tagged from docker.io/openshift/wildfly-120-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 12 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:12, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-120-centos7@sha256:a1fbd1b235102ae18344527b44201c34ad4c2181b0b4cbf295b1a8f0cbde8e73
+      3 days ago
+
+11.0
+  tagged from docker.io/openshift/wildfly-110-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 11 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:11, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-110-centos7@sha256:5828134f4b215ab02ccc832a5f17f06c5b5d8c71c11f138cd7461e3f246b1929
+      3 days ago
+
+10.1
+  tagged from docker.io/openshift/wildfly-101-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 10.1 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:10.1, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-101-centos7@sha256:7775d40f77e22897dc760b76f1656f67ef6bd5561b4d74fbb030b977f61d48e8
+      3 days ago
+
+10.0
+  tagged from docker.io/openshift/wildfly-100-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 10.0 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:10.0, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-100-centos7@sha256:0b1f4092df0a24bb67e34094bc0332b8412bcd4ea9b054fbf678eabfcb0b8ad3
+      3 days ago
+
+9.0
+  tagged from docker.io/openshift/wildfly-90-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 9.0 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:9.0, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-90-centos7@sha256:ea374cc4aee82ed9afe41ce34122136d5837f04d8009a27e4baffbb7980454ff
+      3 days ago
+
+8.1
+  tagged from docker.io/openshift/wildfly-81-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  Build and run WildFly 8.1 applications on CentOS 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/openshift-s2i/s2i-wildfly/blob/master/README.md.
+  Tags: builder, wildfly, java
+  Supports: wildfly:8.1, jee, java
+  Example Repo: https://github.com/openshift/openshift-jee-sample.git
+
+  * docker.io/openshift/wildfly-81-centos7@sha256:9f66d9efe2565d1799219f2a3e07373e62eb2d2cea323596a02aaf00c3ee0750
+      3 days ago
+
+
+Name:			wildfly-runtime
+Namespace:		openshift
+Created:		3 days ago
+Labels:			samples.operator.openshift.io/managed=true
+Annotations:		openshift.io/display-name=WildFly Runtime
+			openshift.io/image.dockerRepositoryCheck=2021-09-02T23:09:33Z
+			samples.operator.openshift.io/version=4.6.0-0.okd-2021-02-14-205305
+Image Repository:	image-registry.openshift-image-registry.svc:5000/openshift/wildfly-runtime
+Image Lookup:		local=false
+Unique Images:		5
+Tags:			5
+
+latest
+  tagged from quay.io/wildfly/wildfly-runtime-centos7:latest
+    prefer registry pullthrough when referencing this tag
+
+  WildFly runtime dependencies image based on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+
+WARNING: By selecting this tag, your application will automatically update to use the latest version of WildFly available on OpenShift, including major versions updates.
+  Tags: wildfly, java
+  Supports: jee, java
+
+  * quay.io/wildfly/wildfly-runtime-centos7@sha256:2204943413ee24838113f75b7ffa1960765d5fd4945c5723682a35de3bba077a
+      3 days ago
+
+20.0
+  tagged from quay.io/wildfly/wildfly-runtime-centos7:20.0
+    prefer registry pullthrough when referencing this tag
+
+  WildFly 20 runtime dependencies image based on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: wildfly, java
+  Supports: wildfly:20, jee, java
+
+  * quay.io/wildfly/wildfly-runtime-centos7@sha256:fa25c1d819e89f4b7b1e514f66ea5ab6a8cc22020a7bb2c9155457ab218cf402
+      3 days ago
+
+19.0
+  tagged from quay.io/wildfly/wildfly-runtime-centos7:19.0
+    prefer registry pullthrough when referencing this tag
+
+  WildFly 19 runtime dependencies image based on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: wildfly, java
+  Supports: wildfly:19, jee, java
+
+  * quay.io/wildfly/wildfly-runtime-centos7@sha256:1abfb26650c10df2d672b157e96cffb4b90f0c2dd869d3859239c692d6fa2f7e
+      3 days ago
+
+18.0
+  tagged from quay.io/wildfly/wildfly-runtime-centos7:18.0
+    prefer registry pullthrough when referencing this tag
+
+  WildFly 18 runtime dependencies image based on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: wildfly, java
+  Supports: wildfly:18, jee, java
+
+  * quay.io/wildfly/wildfly-runtime-centos7@sha256:76ce1ecc8524999d120fe8c5c0353653d49448909c333d2c4cd896b73671bd35
+      3 days ago
+
+17.0
+  tagged from quay.io/wildfly/wildfly-runtime-centos7:17.0
+    prefer registry pullthrough when referencing this tag
+
+  WildFly 17 runtime dependencies image based on CentOS 7. For more information about using this image, including OpenShift considerations, see https://github.com/wildfly/wildfly-s2i/blob/current/README.md.
+  Tags: wildfly, java
+  Supports: wildfly:17, jee, java
+
+  * quay.io/wildfly/wildfly-runtime-centos7@sha256:bb9448265e0561e028d97d444b1b35de12feadd835220e1a704a2aa107f4e234
+      3 days ago

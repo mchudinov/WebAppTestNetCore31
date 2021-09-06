@@ -1,0 +1,117 @@
+﻿kind: Template
+apiVersion: v1
+metadata:
+  name: hello1-template
+objects:
+
+- kind: ImageStream
+  apiVersion: v1
+  metadata:
+    annotations:
+    labels:
+      app: webappcore1
+    name: webappcore1
+  spec:
+    lookupPolicy:
+      local: false
+
+- kind: BuildConfig
+  apiVersion: v1
+  metadata:
+    name: webappcore1 
+    labels:
+      app: webappcore1
+  spec:
+    runPolicy: Serial 
+    triggers: 
+      -
+        type: GitHub
+        github:
+          secret: secret101
+      -
+        type: ImageChange
+    source: 
+      git:
+        uri: "https://github.com/mchudinov/WebAppTestNetCore31.git"
+    strategy:
+      type: Docker
+      dockerStrategy:
+        dockerfilePath: Dockerfile    
+    output: 
+      to:
+        kind: "ImageStreamTag"
+        name: "hello1:latest"
+
+- kind: "DeploymentConfig"
+  apiVersion: "v1"
+  metadata:
+    name: "webappcore1"
+    labels:
+      app: webappcore1
+  spec:
+    template: 
+      metadata:
+        labels:
+          name: "webappcore1"
+          app: webappcore1
+      spec:
+        containers:
+          - name: "webappcore1"
+            imagePullPolicy: Always
+            ports:
+              - containerPort: 8080
+                protocol: "TCP"
+            env:
+              - name: RUN_ENV
+                value: OpenShift-With-Dockerfile 
+        restartPolicy: Always
+    replicas: 1 
+    triggers:
+      - type: "ConfigChange" 
+      - type: "ImageChange" 
+        imageChangeParams:
+          automatic: true
+          containerNames:
+            - "hello1"
+          from:
+            kind: "ImageStreamTag"
+            name: "hello1:latest"
+    strategy: 
+      type: "Rolling"
+    paused: false 
+    revisionHistoryLimit: 2 
+    minReadySeconds: 0 
+
+- kind: Service
+  apiVersion: v1
+  metadata:
+    annotations:
+    name: webappcore1
+    labels:
+      app: webappcore1
+  spec:
+    ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    selector:
+      app: webappcore1
+    type: ClusterIP
+    sessionAffinity: None
+
+- kind: Route
+  apiVersion: route.openshift.io/v1
+  metadata:
+    name: webappcore1
+    labels:
+      app: webappcore1
+    annotations:
+  spec:
+    to:
+      kind: Service
+      name: webappcore1
+      weight: 100
+    port:
+      targetPort: 8080-tcp
+  wildcardPolicy: None  
