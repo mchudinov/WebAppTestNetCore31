@@ -28,8 +28,6 @@ objects:
         type: GitHub
         github:
           secret: secret101
-      -
-        type: ImageChange
     source: 
       git:
         uri: "https://github.com/drnic/php-helloworld.git"
