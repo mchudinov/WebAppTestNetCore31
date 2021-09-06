@@ -37,7 +37,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: "dotnet-31:latest"
+          name: "dotnet-31:3.1"
           namespace: openshift    
     output: 
       to:
