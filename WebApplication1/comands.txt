@@ -1,1 +1,3 @@
 ﻿oc new-app --template webappcore-s2i-template --build-env DOTNET_STARTUP_PROJECT=WebApplication1/WebApplication1.csproj
+
+test123
