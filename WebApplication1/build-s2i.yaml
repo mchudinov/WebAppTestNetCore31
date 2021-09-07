@@ -28,7 +28,12 @@ objects:
         type: GitHub
         github:
           secretReference:
-            name: "dummy"
+            name: "secret101"
+
+      - type: "Generic"
+        generic:
+          secret: "secret101"
+
     source: 
       git:
         uri: "https://github.com/mchudinov/WebAppTestNetCore31.git"
