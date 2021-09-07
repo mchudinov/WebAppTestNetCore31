@@ -77,7 +77,7 @@ objects:
     strategy: 
       type: Rolling
     paused: false 
-    revisionHistoryLimit: 2 
+    revisionHistoryLimit: 5 
     minReadySeconds: 0 
 
 - kind: Service
