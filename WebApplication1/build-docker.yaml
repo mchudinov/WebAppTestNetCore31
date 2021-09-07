@@ -33,7 +33,7 @@ objects:
     strategy:
       type: Docker
       dockerStrategy:
-        dockerfilePath: Dockerfile    
+        dockerfilePath: WebApplication1/Dockerfile    
     output: 
       to:
         kind: ImageStreamTag
