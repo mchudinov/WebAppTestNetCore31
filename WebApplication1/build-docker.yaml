@@ -33,7 +33,7 @@ objects:
     strategy:
       type: Docker
       dockerStrategy:
-        dockerfilePath: WebApplication1/Dockerfile    
+        dockerfilePath: /WebApplication1/Dockerfile    
     output: 
       to:
         kind: ImageStreamTag
@@ -58,6 +58,9 @@ objects:
             ports:
               - containerPort: 8080
                 protocol: TCP
+            env:
+              - name: RUN_ENV
+                value: OpenShift-With-Dockerfile 
         restartPolicy: Always
     replicas: 1 
     triggers:

@@ -2,9 +2,11 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var RUN_ENV = System.Environment.GetEnvironmentVariable("RUN_ENV"); 
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to test OpenShift project</h1>
+    <h1 class="display-4">@RUN_ENV</h1>    
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

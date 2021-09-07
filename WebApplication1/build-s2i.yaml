@@ -61,7 +61,10 @@ objects:
             imagePullPolicy: Always
             ports:
               - containerPort: 8080
-                protocol: TCP            
+                protocol: TCP
+            env:
+              - name: RUN_ENV
+                value: OpenShift-With-SourceStrategy           
         restartPolicy: Always
     replicas: 2 
     triggers:
